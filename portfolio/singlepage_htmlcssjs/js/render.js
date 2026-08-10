@@ -90,7 +90,7 @@ export function renderProjects(projects) {
         .filter(Boolean)
         .join(' · ');
       const image = project.imageUrl
-        ? `<div class="project-media"><img src="${escapeHtml(project.imageUrl)}" alt="" width="640" height="360" loading="lazy" decoding="async" /></div>`
+        ? `<div class="project-media"><img src="${escapeHtml(project.imageUrl)}" alt="${escapeHtml(project.title)}" width="640" height="360" loading="lazy" decoding="async" /></div>`
         : '';
 
       return `

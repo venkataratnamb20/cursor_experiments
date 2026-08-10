@@ -94,6 +94,7 @@ describe('renderProjects', () => {
     const html = renderProjects(portfolioContent.projects);
     expect(html).toContain(withImage.imageUrl);
     expect(html).toContain('<img');
+    expect(html).toContain(`alt="${withImage.title}"`);
   });
 });
 

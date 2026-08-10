@@ -5,6 +5,14 @@
  */
 
 export const portfolioContent = {
+  /**
+   * Public site origin for canonical / Open Graph / sitemap.
+   * Set this to your real HTTPS origin before publishing (no trailing slash).
+   */
+  site: {
+    origin: 'https://venkataratnamb20.github.io/cursor_experiments',
+    ogImagePath: '/assets/og-default.svg',
+  },
   profile: {
     name: 'Venkata Ratnam Bhumireddy',
     title: 'Staff Analog IC Design Engineer',
@@ -18,7 +26,7 @@ export const portfolioContent = {
     videoUrl: './assets/hero-loop.mp4',
     posterUrl: './assets/hero-poster.jpg',
     attribution:
-      'Hero still: Unsplash (circuit imagery). Hero loop: MDN CC0 sample (replace with Pixabay tech clip as needed). Project stills: Unsplash.',
+      'Hero still: Unsplash (circuit imagery). Hero loop: Pexels motherboard clip by Tima Miroshnichenko (free license). Project stills: Unsplash.',
   },
   about: {
     heading: 'About',
@@ -229,7 +237,7 @@ export const portfolioContent = {
   },
   mediaAttribution: [
     'Unsplash photographs used under the Unsplash License (https://unsplash.com/license). See assets/ATTRIBUTION.md.',
-    'Hero video: MDN CC0 sample clip (replaceable with Pixabay Content License footage).',
+    'Hero video: Pexels free stock (motherboard close-up) — see assets/ATTRIBUTION.md.',
     'GitHub project links are public placeholders for portfolio demonstration.',
   ],
 };

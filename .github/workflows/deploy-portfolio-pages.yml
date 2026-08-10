@@ -1,0 +1,118 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - 'portfolio/singlepage_htmlcssjs/**'
+      - '.github/workflows/deploy-portfolio-pages.yml'
+  pull_request:
+    branches:
+      - main
+      - dev
+    paths:
+      - 'portfolio/singlepage_htmlcssjs/**'
+      - '.github/workflows/deploy-portfolio-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-portfolio
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: portfolio/singlepage_htmlcssjs
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: portfolio/singlepage_htmlcssjs/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit + DOM tests
+        run: npm test
+
+      - name: DOM e2e suite
+        run: npm run test:e2e
+
+      - name: Verify production origin is set
+        run: |
+          set -euo pipefail
+          ORIGIN='https://venkataratnamb20.github.io/cursor_experiments'
+          grep -q "$ORIGIN" js/content.js
+          grep -q "$ORIGIN" robots.txt
+          grep -q "$ORIGIN" sitemap.xml
+          grep -q "$ORIGIN" index.html
+          ! grep -q 'https://example.com' js/content.js
+          ! grep -q 'https://example.com' robots.txt
+          ! grep -q 'https://example.com' sitemap.xml
+          echo "Production origin checks passed: $ORIGIN"
+
+  build:
+    name: Build Pages artifact
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare publish directory
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/pages-dist"
+          rsync -a \
+            --exclude node_modules \
+            --exclude .agents \
+            --exclude docs/tests \
+            --exclude tests \
+            --exclude playwright.config.js \
+            --exclude vitest.config.js \
+            --exclude package.json \
+            --exclude package-lock.json \
+            --exclude Makefile \
+            --exclude .gitignore \
+            --exclude .env.production \
+            --exclude '*.test.js' \
+            ./ "$GITHUB_WORKSPACE/pages-dist/"
+          touch "$GITHUB_WORKSPACE/pages-dist/.nojekyll"
+          test -f "$GITHUB_WORKSPACE/pages-dist/index.html"
+          test -f "$GITHUB_WORKSPACE/pages-dist/js/content.js"
+          test -f "$GITHUB_WORKSPACE/pages-dist/.nojekyll"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -14,7 +14,7 @@ Primary brand: **Staff Analog IC Design Engineer** (content from [`docs/resumes/
 - Hero media (poster + muted video; reduced-motion uses poster only)
 - FAQ accordion and client-side contact validation (`mailto:`)
 - SEO: meta tags, Open Graph, JSON-LD `Person`, `robots.txt`, `sitemap.xml`
-- PWA: web manifest + cache-first service worker for the static shell
+- PWA: web manifest + service worker (**network-first** for HTML/JS so content updates are not stuck)
 - TDD: Vitest unit tests + Playwright e2e smoke tests
 
 ## Quick start
@@ -28,13 +28,22 @@ npm run serve
 # open http://127.0.0.1:4173
 ```
 
-You can also open `index.html` directly in a browser. ES modules and the service worker work best over `http://` (use `npm run serve`).
+Use `http://` (not `file://`) so ES modules and the service worker behave correctly.
+
+### Seeing an old version of the site?
+
+1. Confirm `npm run serve` is running.
+2. DevTools → Application → Service Workers → **Unregister**.
+3. Delete old Cache Storage entries (`vrb-portfolio-v1` / `v2` if present).
+4. Hard refresh (Ctrl+Shift+R).
+
+See [`docs/tests/manual/00-stale-ui-and-tooling-notes.md`](docs/tests/manual/00-stale-ui-and-tooling-notes.md).
 
 ## Edit content
 
-Update copy, projects, education, experience, FAQ, and contact details in [`js/content.js`](js/content.js). Sections re-render from that single content source on load.
+Update copy, projects, education, experience, FAQ, and contact in [`js/content.js`](js/content.js).
 
-Replace `https://example.com` in `index.html`, `robots.txt`, and `sitemap.xml` with your real domain before publishing.
+**Before publishing**, set `site.origin` in `js/content.js` (no trailing slash). Runtime SEO (`js/seo.js`) updates canonical, `og:url`, `og:image`, and JSON-LD `url`. Also mirror the same origin into [`robots.txt`](robots.txt) and [`sitemap.xml`](sitemap.xml).
 
 ## Tests
 
@@ -44,7 +53,14 @@ npm run test:e2e         # DOM integration suite (no browser binaries required)
 npm run test:e2e:playwright  # Playwright smoke (needs Chromium + host libs)
 ```
 
-Playwright requires browser system libraries (`npx playwright install chromium` and, on Linux, `npx playwright install-deps chromium`). Use the Vitest DOM suite when those cannot be installed.
+Playwright on Linux needs Chromium **and** system libraries:
+
+```bash
+npx playwright install chromium
+npx playwright install-deps chromium   # fixes missing libs e.g. libnspr4.so
+```
+
+If deps cannot be installed, use the Vitest DOM suite. Manual verification notes live under [`docs/tests/manual/`](docs/tests/manual/).
 
 ## Project layout
 
@@ -52,9 +68,10 @@ Playwright requires browser system libraries (`npx playwright install chromium` 
 .
 ├── index.html
 ├── css/                 # tokens, base, layout, components
-├── js/                  # content, render, nav, faq, contact, reveal, main
+├── js/                  # content, render, seo, nav, faq, contact, reveal, main
 ├── assets/              # icons, hero/project media, resume.pdf, ATTRIBUTION.md
 ├── docs/resumes/        # source CV PDF
+├── docs/tests/manual/   # manual verification feedback
 ├── manifest.webmanifest
 ├── sw.js
 ├── robots.txt
@@ -68,13 +85,20 @@ Installed under `.agents/skills/`: `frontend-design`, `ui-ux-pro-max`, `copywrit
 
 ## Deploy notes
 
-Any static host works (GitHub Pages, Cloudflare Pages, Netlify, etc.). Point the host at this folder root. After deploy, verify the service worker registers over HTTPS and update canonical / sitemap URLs.
+Production URL (GitHub Pages project site):
+**https://venkataratnamb20.github.io/cursor_experiments/**
+
+CI/CD: [`.github/workflows/deploy-portfolio-pages.yml`](../../.github/workflows/deploy-portfolio-pages.yml) runs tests on PRs/pushes touching this folder, then deploys the static site to GitHub Pages from `dev` or `main`.
+
+After the first successful deploy, set the repository **Settings → Pages → Source** to **GitHub Actions** (if not already).
+
+`site.origin`, `robots.txt`, `sitemap.xml`, and `index.html` meta tags are set to the Pages URL above.
 
 ## Assets
 
-1. **Images:** Unsplash stills stored under `assets/` (Unsplash License). See [`assets/ATTRIBUTION.md`](assets/ATTRIBUTION.md).
-2. **Video:** `assets/hero-loop.mp4` is currently an MDN CC0 sample. Prefer replacing with a Pixabay tech/circuit loop (Pixabay Content License) using the same path.
-3. **Projects:** Public GitHub repos used as placeholders (`microsoft/autogen`, `crewAIInc/crewAI`).
+1. **Images:** Unsplash stills under `assets/` (Unsplash License). See [`assets/ATTRIBUTION.md`](assets/ATTRIBUTION.md).
+2. **Video:** `assets/hero-loop.mp4` — Pexels motherboard close-up (tech subject). Pixabay loops may replace the same path.
+3. **Projects:** Public GitHub repos as placeholders (`microsoft/autogen`, `crewAIInc/crewAI`).
 
 ## Development guidelines
 

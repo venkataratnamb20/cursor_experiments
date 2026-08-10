@@ -17,9 +17,9 @@ Photographers retain copyright; Unsplash License allows free use with optional c
 
 | File | Source | License |
 | --- | --- | --- |
-| `hero-loop.mp4` | MDN interactive examples CC0 flower clip (https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4) | CC0 |
+| `hero-loop.mp4` | Pexels — [Close Up Shot of a Motherboard](https://www.pexels.com/video/close-up-shot-of-a-motherboard-6755170/) by Tima Miroshnichenko (`hero-loop.source.txt`) | [Pexels License](https://www.pexels.com/license/) (free for commercial use; no attribution required but credited here) |
 
-Replace `hero-loop.mp4` with a Pixabay tech/circuit loop when preferred (Pixabay Content License: https://pixabay.com/service/license-summary/). Keep the same filename or update `js/content.js` `hero.videoUrl`.
+Open-source / stock alternatives (Pixabay Content License) may replace this file using the same path.
 
 ## Resume
 

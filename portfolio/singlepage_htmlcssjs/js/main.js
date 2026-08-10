@@ -14,6 +14,7 @@ import { initFaq } from './faq.js';
 import { initNav } from './nav.js';
 import { initContactForm } from './contact.js';
 import { initReveal } from './reveal.js';
+import { hydrateSeo } from './seo.js';
 
 /**
  * Fill static profile text in the hero and about sections.
@@ -161,6 +162,12 @@ function renderDynamicSections() {
 
 function boot() {
   hydrateProfile();
+  hydrateSeo(
+    document,
+    portfolioContent.site,
+    portfolioContent.profile,
+    portfolioContent.contact,
+  );
   renderDynamicSections();
   initNav(document);
   initFaq(document.querySelector('[data-faq]'));

@@ -1,0 +1,296 @@
+{
+  "date": "2026-08-10T23:01:07.970Z",
+  "baseUrl": "http://127.0.0.1:4173",
+  "swInfo": {
+    "swCount": 1,
+    "swUrls": [
+      "http://127.0.0.1:4173/sw.js"
+    ],
+    "cacheNames": [
+      "vrb-portfolio-v3"
+    ]
+  },
+  "screenshots": {
+    "hero": "/mnt/d/workspaces/experiments/cursor_exp/cursor_experiments/portfolio/singlepage_htmlcssjs/docs/tests/manual/screenshots-a/hero-viewport.png",
+    "full": "/mnt/d/workspaces/experiments/cursor_exp/cursor_experiments/portfolio/singlepage_htmlcssjs/docs/tests/manual/screenshots-a/full-page.png"
+  },
+  "githubLinks": [
+    "https://github.com/microsoft/autogen",
+    "https://github.com/crewAIInc/crewAI"
+  ],
+  "resumeHref": "./assets/resume.pdf",
+  "passCount": 40,
+  "failCount": 2,
+  "checks": [
+    {
+      "id": "A1",
+      "description": "H1 name is Venkata Ratnam Bhumireddy",
+      "pass": true,
+      "evidence": "Venkata Ratnam Bhumireddy"
+    },
+    {
+      "id": "A2",
+      "description": "Primary title/job is Analog IC (Staff Analog IC Design Engineer), not generic Software engineer",
+      "pass": true,
+      "evidence": "hasAnalogTitle=true; hero vicinity: Open to senior analog / mixed-signal IC design roles | Staff Analog IC Design Engineer"
+    },
+    {
+      "id": "A2b",
+      "description": "Hero/home region includes Staff Analog IC Design Engineer",
+      "pass": false,
+      "evidence": "VRB\nHome\nAbout\nEducation\nExperience\nPortfolio\nResume\nContact\nFAQ",
+      "adjudicatedPass": true,
+      "note": "False FAIL: broad selector missed #home; confirmed Staff Analog IC in #home"
+    },
+    {
+      "id": "A2c",
+      "description": "No stale \"Software engineer\" placeholder as primary brand in visible body",
+      "pass": true,
+      "evidence": "no Software mentions"
+    },
+    {
+      "id": "A3",
+      "description": "About mentions Vishay / mixed-signal",
+      "pass": true,
+      "evidence": "I am a Staff Analog IC Design Engineer at Vishay Siliconix in Cork, focused on optical sensors and encoders. Earlier roles at MCCI, GateLength, Analog Semiconductors, and NXP covered SAR ADCs, high-speed buck converter power paths, RF digital PLLs, SerDes transmitters, bandgaps, LDOs, and crystal oscillators. | Open to senior analog / mixed-signal IC design roles"
+    },
+    {
+      "id": "A4a",
+      "description": "Education includes DA-IICT / VLSI",
+      "pass": true,
+      "evidence": "Dhirubhai Ambani Institute of ICT (DA-IICT), Gandhinagar, India"
+    },
+    {
+      "id": "A4b",
+      "description": "Education includes GVP",
+      "pass": true,
+      "evidence": "GVP PG College, Visakhapatnam, India"
+    },
+    {
+      "id": "A4c",
+      "description": "Education includes SVU / Sri Venkateswara",
+      "pass": true,
+      "evidence": "Sri Venkateswara University, Tirupati, India"
+    },
+    {
+      "id": "A5-Vishay",
+      "description": "Experience mentions Vishay",
+      "pass": true,
+      "evidence": "I am a Staff Analog IC Design Engineer at Vishay Siliconix in Cork, focused on optical sensors and encoders. Earlier roles at MCCI, GateLength, Analog Semiconductors, and NXP covered SAR ADCs, high-speed buck converter power paths, RF digital PLLs, SerDes transmitters, bandgaps, LDOs, and crystal oscillators."
+    },
+    {
+      "id": "A5-MCCI",
+      "description": "Experience mentions MCCI",
+      "pass": true,
+      "evidence": "I am a Staff Analog IC Design Engineer at Vishay Siliconix in Cork, focused on optical sensors and encoders. Earlier roles at MCCI, GateLength, Analog Semiconductors, and NXP covered SAR ADCs, high-speed buck converter power paths, RF digital PLLs, SerDes transmitters, bandgaps, LDOs, and crystal oscillators."
+    },
+    {
+      "id": "A5-GateLength",
+      "description": "Experience mentions GateLength",
+      "pass": true,
+      "evidence": "I am a Staff Analog IC Design Engineer at Vishay Siliconix in Cork, focused on optical sensors and encoders. Earlier roles at MCCI, GateLength, Analog Semiconductors, and NXP covered SAR ADCs, high-speed buck converter power paths, RF digital PLLs, SerDes transmitters, bandgaps, LDOs, and crystal oscillators."
+    },
+    {
+      "id": "A5-NXP",
+      "description": "Experience mentions NXP",
+      "pass": true,
+      "evidence": "I am a Staff Analog IC Design Engineer at Vishay Siliconix in Cork, focused on optical sensors and encoders. Earlier roles at MCCI, GateLength, Analog Semiconductors, and NXP covered SAR ADCs, high-speed buck converter power paths, RF digital PLLs, SerDes transmitters, bandgaps, LDOs, and crystal oscillators."
+    },
+    {
+      "id": "A6a",
+      "description": "Portfolio demo badge/label present",
+      "pass": true,
+      "evidence": "Analog / mixed-signal IC roles from the resume, plus one clearly labeled portfolio demo for Senior ML / agentic AI systems. || Portfolio demo Portfolio demo || Independent portfolio demonstration (not CV employment)"
+    },
+    {
+      "id": "A6b",
+      "description": "Senior ML Engineer / Agentic AI demo text present",
+      "pass": true,
+      "evidence": "Senior ML Engineer — Agentic AI Systems"
+    },
+    {
+      "id": "A6c",
+      "description": "Demo marked as not CV employment",
+      "pass": true,
+      "evidence": "Independent portfolio demonstration (not CV employment)"
+    },
+    {
+      "id": "A7a",
+      "description": "Projects show 16 GHz / 0.6 ps metrics",
+      "pass": true,
+      "evidence": "High-speed 16 GHz RF digital PLL at 28nm with 0.6 ps rms jitter (2017–2019). | High-speed 16 GHz RF digital PLL at 28nm with 0.6 ps rms jitter (2017–2019)."
+    },
+    {
+      "id": "A7b",
+      "description": "Projects show PMIC ~90% efficiency",
+      "pass": true,
+      "evidence": "Designed and taped out a 100 MHz PMIC ASIC with ~90% efficiency at 28nm for an H2020 project, including high-speed buck converter power-path work."
+    },
+    {
+      "id": "A7c",
+      "description": "GitHub links to real repos present (autogen / crewAI)",
+      "pass": true,
+      "evidence": "https://github.com/microsoft/autogen, https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "id": "A8a",
+      "description": "Resume PDF link points to ./assets/resume.pdf",
+      "pass": true,
+      "evidence": "./assets/resume.pdf"
+    },
+    {
+      "id": "A8b",
+      "description": "Resume PDF URL returns HTTP 200 with PDF content-type or bytes",
+      "pass": true,
+      "evidence": "status=200 content-type=application/pdf"
+    },
+    {
+      "id": "A9a",
+      "description": "Contact email is venkata.ratnam.in17@gmail.com",
+      "pass": true,
+      "evidence": "venkata.ratnam.in17@gmail.com"
+    },
+    {
+      "id": "A9b",
+      "description": "LinkedIn link present",
+      "pass": true,
+      "evidence": "https://www.linkedin.com/in/venkata-ratnam-bhumireddy"
+    },
+    {
+      "id": "A9c",
+      "description": "No phone number on page",
+      "pass": false,
+      "evidence": "phoneLike=[\"10.\\n\\n2006\",\"2019).\\n\\n2015\"] telLinks=0",
+      "adjudicatedPass": true,
+      "note": "False FAIL: year ranges matched phone regex; no tel:/phone on page"
+    },
+    {
+      "id": "A10-Home",
+      "description": "Section/nav present: Home",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-About",
+      "description": "Section/nav present: About",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-Education",
+      "description": "Section/nav present: Education",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-Experience",
+      "description": "Section/nav present: Experience",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-Portfolio",
+      "description": "Section/nav present: Portfolio",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-Resume",
+      "description": "Section/nav present: Resume",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-Contact",
+      "description": "Section/nav present: Contact",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A10-FAQ",
+      "description": "Section/nav present: FAQ",
+      "pass": true,
+      "evidence": "navMatches=1 section=true"
+    },
+    {
+      "id": "A11",
+      "description": "FAQ clarifies demo vs employment",
+      "pass": true,
+      "evidence": "Is the Senior ML / agentic AI section real employment? © 2026 Venkata Ratnam Bhumireddy. Built as a minimal HTML/CSS/JS portfolio. Unsplash photographs used under the Unsplash License (https://unsplash.com/license)"
+    },
+    {
+      "id": "A12-home",
+      "description": "DOM section #home exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-about",
+      "description": "DOM section #about exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-education",
+      "description": "DOM section #education exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-experience",
+      "description": "DOM section #experience exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-portfolio",
+      "description": "DOM section #portfolio exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-resume",
+      "description": "DOM section #resume exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-contact",
+      "description": "DOM section #contact exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A12-faq",
+      "description": "DOM section #faq exists",
+      "pass": true,
+      "evidence": "count=1"
+    },
+    {
+      "id": "A13",
+      "description": "Document SW/cache state after hard-reload strategy",
+      "pass": true,
+      "evidence": "{\"swCount\":1,\"swUrls\":[\"http://127.0.0.1:4173/sw.js\"],\"cacheNames\":[\"vrb-portfolio-v3\"]}"
+    },
+    {
+      "id": "A14",
+      "description": "Page does not show only outdated Software-engineer shell as H1/title",
+      "pass": true,
+      "evidence": "h1=\"Venkata Ratnam Bhumireddy\""
+    }
+  ],
+  "consoleSample": [],
+  "adjudication": {
+    "scriptPass": 40,
+    "scriptFail": 2,
+    "falsePositives": [
+      "A2b",
+      "A9c"
+    ],
+    "adjudicatedChecklistPass": 14,
+    "adjudicatedChecklistFail": 0,
+    "verdict": "PASS",
+    "matchesResumeAndRequirements": true,
+    "cacheName": "vrb-portfolio-v3"
+  }
+}

@@ -1,0 +1,507 @@
+﻿{
+    "timestamp":  "2026-08-11T00:05:48.5874098+01:00",
+    "baseUrl":  "http://127.0.0.1:4173",
+    "method":  "Windows Chrome CDP + PowerShell (Playwright Linux chromium missing libnspr4)",
+    "summary":  {
+                    "passCount":  52,
+                    "failCount":  5,
+                    "total":  57
+                },
+    "checks":  [
+                   {
+                       "id":  "seo-title",
+                       "status":  "PASS",
+                       "detail":  "Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer"
+                   },
+                   {
+                       "id":  "seo-description",
+                       "status":  "PASS",
+                       "detail":  "Portfolio of Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer specializing in mixed-signal ASICs (ADC, PMIC, "
+                   },
+                   {
+                       "id":  "seo-canonical",
+                       "status":  "PASS",
+                       "detail":  "https://venkataratnamb20.github.io/cursor_experiments/"
+                   },
+                   {
+                       "id":  "seo-jsonld-jobTitle",
+                       "status":  "PASS",
+                       "detail":  "Staff Analog IC Design Engineer"
+                   },
+                   {
+                       "id":  "seo-jsonld-email",
+                       "status":  "PASS",
+                       "detail":  "mailto:venkata.ratnam.in17@gmail.com"
+                   },
+                   {
+                       "id":  "pwa-manifest-link",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:4173/manifest.webmanifest"
+                   },
+                   {
+                       "id":  "pwa-manifest-fetch",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200"
+                   },
+                   {
+                       "id":  "pwa-sw-register",
+                       "status":  "PASS",
+                       "detail":  "{\"supported\":true,\"registered\":true,\"scope\":\"http://127.0.0.1:4173/\",\"active\":true,\"controller\":false}"
+                   },
+                   {
+                       "id":  "section-home",
+                       "status":  "PASS",
+                       "detail":  "section Venkata Ratnam Bhumireddy"
+                   },
+                   {
+                       "id":  "section-about",
+                       "status":  "PASS",
+                       "detail":  "section Silicon first"
+                   },
+                   {
+                       "id":  "section-education",
+                       "status":  "PASS",
+                       "detail":  "section Background"
+                   },
+                   {
+                       "id":  "section-experience",
+                       "status":  "PASS",
+                       "detail":  "section Career timeline"
+                   },
+                   {
+                       "id":  "section-portfolio",
+                       "status":  "PASS",
+                       "detail":  "section Selected work"
+                   },
+                   {
+                       "id":  "section-resume",
+                       "status":  "PASS",
+                       "detail":  "section Experience highlights"
+                   },
+                   {
+                       "id":  "section-contact",
+                       "status":  "PASS",
+                       "detail":  "section Start a conversation"
+                   },
+                   {
+                       "id":  "section-faq",
+                       "status":  "PASS",
+                       "detail":  "section Common questions"
+                   },
+                   {
+                       "id":  "nav-home",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Home\",\"href\":\"#home\"}"
+                   },
+                   {
+                       "id":  "nav-about",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"About\",\"href\":\"#about\"}"
+                   },
+                   {
+                       "id":  "nav-education",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Education\",\"href\":\"#education\"}"
+                   },
+                   {
+                       "id":  "nav-experience",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Experience\",\"href\":\"#experience\"}"
+                   },
+                   {
+                       "id":  "nav-portfolio",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Portfolio\",\"href\":\"#portfolio\"}"
+                   },
+                   {
+                       "id":  "nav-resume",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Resume\",\"href\":\"#resume\"}"
+                   },
+                   {
+                       "id":  "nav-contact",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"Contact\",\"href\":\"#contact\"}"
+                   },
+                   {
+                       "id":  "nav-faq",
+                       "status":  "PASS",
+                       "detail":  "{\"text\":\"FAQ\",\"href\":\"#faq\"}"
+                   },
+                   {
+                       "id":  "landmark-main",
+                       "status":  "PASS",
+                       "detail":  "present"
+                   },
+                   {
+                       "id":  "landmark-header",
+                       "status":  "PASS",
+                       "detail":  "present"
+                   },
+                   {
+                       "id":  "hero-title-analog",
+                       "status":  "FAIL",
+                       "detail":  "hero=Venkata Ratnam Bhumireddy",
+                       "severity":  "critical"
+                   },
+                   {
+                       "id":  "copy-no-placeholder",
+                       "status":  "PASS",
+                       "detail":  "OK"
+                   },
+                   {
+                       "id":  "design-dark-bg",
+                       "status":  "PASS",
+                       "detail":  "bodyBg=rgb(9, 13, 22) vars={}"
+                   },
+                   {
+                       "id":  "media-hero-poster",
+                       "status":  "PASS",
+                       "detail":  "./assets/hero-poster.jpg"
+                   },
+                   {
+                       "id":  "media-hero-video",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:4173/assets/hero-loop.mp4"
+                   },
+                   {
+                       "id":  "img-loaded-hero-poster.jpg",
+                       "status":  "PASS",
+                       "detail":  "1920x1280"
+                   },
+                   {
+                       "id":  "img-loaded-project-silicon.jpg",
+                       "status":  "FAIL",
+                       "detail":  "failed http://127.0.0.1:4173/assets/project-silicon.jpg",
+                       "severity":  "major"
+                   },
+                   {
+                       "id":  "img-loaded-project-lab.jpg",
+                       "status":  "FAIL",
+                       "detail":  "failed http://127.0.0.1:4173/assets/project-lab.jpg",
+                       "severity":  "major"
+                   },
+                   {
+                       "id":  "img-loaded-project-agents.jpg",
+                       "status":  "FAIL",
+                       "detail":  "failed http://127.0.0.1:4173/assets/project-agents.jpg",
+                       "severity":  "major"
+                   },
+                   {
+                       "id":  "img-loaded-project-agents.jpg",
+                       "status":  "FAIL",
+                       "detail":  "failed http://127.0.0.1:4173/assets/project-agents.jpg",
+                       "severity":  "major"
+                   },
+                   {
+                       "id":  "http-/assets/hero-poster.jpg",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 image/jpeg"
+                   },
+                   {
+                       "id":  "http-/assets/hero-loop.mp4",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 video/mp4"
+                   },
+                   {
+                       "id":  "http-/assets/ATTRIBUTION.md",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 text/markdown; charset=utf-8"
+                   },
+                   {
+                       "id":  "http-/manifest.webmanifest",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 application/manifest+json; charset=utf-8"
+                   },
+                   {
+                       "id":  "http-/sw.js",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 application/javascript; charset=utf-8"
+                   },
+                   {
+                       "id":  "http-/assets/project-silicon.jpg",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 image/jpeg"
+                   },
+                   {
+                       "id":  "http-/assets/project-lab.jpg",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 image/jpeg"
+                   },
+                   {
+                       "id":  "http-/assets/project-agents.jpg",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 image/jpeg"
+                   },
+                   {
+                       "id":  "http-/assets/resume.pdf",
+                       "status":  "PASS",
+                       "detail":  "HTTP 200 application/pdf"
+                   },
+                   {
+                       "id":  "projects-github-real",
+                       "status":  "PASS",
+                       "detail":  "https://github.com/microsoft/autogen, https://github.com/crewAIInc/crewAI, https://github.com/microsoft/autogen, https://github.com/microsoft/autogen, https://github.com/crewAIInc/crewAI, https://github.com/crewAIInc/crewAI, https://github.com/microsoft/autogen"
+                   },
+                   {
+                       "id":  "responsive-1280-no-overflow",
+                       "status":  "PASS",
+                       "detail":  "sw=1265 cw=1265"
+                   },
+                   {
+                       "id":  "screenshot-desktop",
+                       "status":  "PASS",
+                       "detail":  "desktop-1280-full.png + hero"
+                   },
+                   {
+                       "id":  "nav-scroll-experience",
+                       "status":  "PASS",
+                       "detail":  "{\"top\":103.953125,\"inView\":true,\"hash\":\"#experience\"}"
+                   },
+                   {
+                       "id":  "faq-accordion",
+                       "status":  "PASS",
+                       "detail":  "{\"mode\":\"button\",\"before\":\"false\",\"afterOpen\":\"true\",\"afterClose\":\"false\",\"count\":4}"
+                   },
+                   {
+                       "id":  "contact-validation",
+                       "status":  "PASS",
+                       "detail":  "{\"form\":true,\"action\":null,\"invalid\":[\"name\",\"email\",\"message\"],\"errors\":[\"Name is required (at least 2 characters).\",\"Email is required.\",\"Message must be at least 10 characters.\"],\"ariaInvalid\":3,\"reportValidity\":true,\"mailto\":[\"mailto:venkata.ratnam.in17@gmail.com\"],\"visibleEmail\":\"venkata.ratnam.in17@gmail.com\"}"
+                   },
+                   {
+                       "id":  "contact-mailto",
+                       "status":  "PASS",
+                       "detail":  "mailto:venkata.ratnam.in17@gmail.com"
+                   },
+                   {
+                       "id":  "responsive-375-no-overflow",
+                       "status":  "PASS",
+                       "detail":  "{\"overflowX\":false,\"scrollWidth\":375,\"clientWidth\":375,\"togglePresent\":true,\"toggleSelector\":\"nav-toggle\",\"heroText\":\"Venkata Ratnam Bhumireddy\",\"heroFontSize\":\"36px\",\"heroWidth\":327,\"visibleNavLinks\":[]}"
+                   },
+                   {
+                       "id":  "responsive-375-hero-readable",
+                       "status":  "PASS",
+                       "detail":  "Venkata Ratnam Bhumireddy fs=36px"
+                   },
+                   {
+                       "id":  "responsive-375-nav-usable",
+                       "status":  "PASS",
+                       "detail":  "Home, About, Education, Experience, Portfolio, Resume, Contact, FAQ"
+                   },
+                   {
+                       "id":  "motion-reduced-video",
+                       "status":  "PASS",
+                       "detail":  "{\"video\":true,\"display\":\"none\",\"visibility\":\"visible\",\"opacity\":\"0\",\"paused\":true,\"hiddenAttr\":true,\"ariaHidden\":null,\"className\":\"hero-video\"}"
+                   },
+                   {
+                       "id":  "attribution-file",
+                       "status":  "PASS",
+                       "detail":  "D:\\workspaces\\experiments\\cursor_exp\\cursor_experiments\\portfolio\\singlepage_htmlcssjs\\assets\\ATTRIBUTION.md"
+                   }
+               ],
+    "defects":  [
+                    {
+                        "id":  "hero-title-analog",
+                        "detail":  "hero=Venkata Ratnam Bhumireddy",
+                        "severity":  "critical"
+                    },
+                    {
+                        "id":  "img-loaded-project-silicon.jpg",
+                        "detail":  "failed http://127.0.0.1:4173/assets/project-silicon.jpg",
+                        "severity":  "major"
+                    },
+                    {
+                        "id":  "img-loaded-project-lab.jpg",
+                        "detail":  "failed http://127.0.0.1:4173/assets/project-lab.jpg",
+                        "severity":  "major"
+                    },
+                    {
+                        "id":  "img-loaded-project-agents.jpg",
+                        "detail":  "failed http://127.0.0.1:4173/assets/project-agents.jpg",
+                        "severity":  "major"
+                    },
+                    {
+                        "id":  "img-loaded-project-agents.jpg",
+                        "detail":  "failed http://127.0.0.1:4173/assets/project-agents.jpg",
+                        "severity":  "major"
+                    }
+                ],
+    "observations":  {
+                         "seo":  {
+                                     "title":  "Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer",
+                                     "description":  "Portfolio of Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer specializing in mixed-signal ASICs (ADC, PMIC, ADPLL, SerDes), with portfolio-demo work in agentic AI systems.",
+                                     "canonical":  "https://venkataratnamb20.github.io/cursor_experiments/",
+                                     "manifest":  "http://127.0.0.1:4173/manifest.webmanifest",
+                                     "person":  {
+                                                    "@context":  "https://schema.org",
+                                                    "@type":  "Person",
+                                                    "name":  "Venkata Ratnam Bhumireddy",
+                                                    "jobTitle":  "Staff Analog IC Design Engineer",
+                                                    "url":  "https://venkataratnamb20.github.io/cursor_experiments/",
+                                                    "email":  "mailto:venkata.ratnam.in17@gmail.com",
+                                                    "sameAs":  [
+                                                                   "https://www.linkedin.com/in/venkata-ratnam-bhumireddy"
+                                                               ],
+                                                    "description":  "14+ years designing mixed-signal ASICs — SAR ADCs, PMICs, ADPLLs, and SerDes — from architecture through layout and tape-out across 180nm to 14nm CMOS."
+                                                }
+                                 },
+                         "serviceWorker":  {
+                                               "supported":  true,
+                                               "registered":  true,
+                                               "scope":  "http://127.0.0.1:4173/",
+                                               "active":  true,
+                                               "controller":  false
+                                           },
+                         "heroTitle":  "Venkata Ratnam Bhumireddy",
+                         "bodyBg":  "rgb(9, 13, 22)",
+                         "cssVars":  {
+
+                                     },
+                         "media":  {
+                                       "poster":  "./assets/hero-poster.jpg",
+                                       "videoSrc":  "http://127.0.0.1:4173/assets/hero-loop.mp4",
+                                       "videoPresent":  true
+                                   },
+                         "projectLinks":  [
+                                              {
+                                                  "text":  "GitHub",
+                                                  "href":  "https://github.com/microsoft/autogen"
+                                              },
+                                              {
+                                                  "text":  "GitHub",
+                                                  "href":  "https://github.com/crewAIInc/crewAI"
+                                              },
+                                              {
+                                                  "text":  "GitHub",
+                                                  "href":  "https://github.com/microsoft/autogen"
+                                              },
+                                              {
+                                                  "text":  "Live",
+                                                  "href":  "https://github.com/microsoft/autogen"
+                                              },
+                                              {
+                                                  "text":  "GitHub",
+                                                  "href":  "https://github.com/crewAIInc/crewAI"
+                                              },
+                                              {
+                                                  "text":  "Live",
+                                                  "href":  "https://github.com/crewAIInc/crewAI"
+                                              },
+                                              {
+                                                  "text":  "GitHub (placeholders)",
+                                                  "href":  "https://github.com/microsoft/autogen"
+                                              }
+                                          ],
+                         "faq":  {
+                                     "mode":  "button",
+                                     "before":  "false",
+                                     "afterOpen":  "true",
+                                     "afterClose":  "false",
+                                     "count":  4
+                                 },
+                         "contact":  {
+                                         "form":  true,
+                                         "action":  null,
+                                         "invalid":  [
+                                                         "name",
+                                                         "email",
+                                                         "message"
+                                                     ],
+                                         "errors":  [
+                                                        "Name is required (at least 2 characters).",
+                                                        "Email is required.",
+                                                        "Message must be at least 10 characters."
+                                                    ],
+                                         "ariaInvalid":  3,
+                                         "reportValidity":  true,
+                                         "mailto":  [
+                                                        "mailto:venkata.ratnam.in17@gmail.com"
+                                                    ],
+                                         "visibleEmail":  "venkata.ratnam.in17@gmail.com"
+                                     },
+                         "mobile":  {
+                                        "overflowX":  false,
+                                        "scrollWidth":  375,
+                                        "clientWidth":  375,
+                                        "togglePresent":  true,
+                                        "toggleSelector":  "nav-toggle",
+                                        "heroText":  "Venkata Ratnam Bhumireddy",
+                                        "heroFontSize":  "36px",
+                                        "heroWidth":  327,
+                                        "visibleNavLinks":  [
+
+                                                            ]
+                                    },
+                         "reducedMotion":  {
+                                               "video":  true,
+                                               "display":  "none",
+                                               "visibility":  "visible",
+                                               "opacity":  "0",
+                                               "paused":  true,
+                                               "hiddenAttr":  true,
+                                               "ariaHidden":  null,
+                                               "className":  "hero-video"
+                                           },
+                         "assetStatuses":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/hero-poster.jpg",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "image/jpeg"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/hero-loop.mp4",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "video/mp4"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/ATTRIBUTION.md",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "text/markdown; charset=utf-8"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/manifest.webmanifest",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "application/manifest+json; charset=utf-8"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/sw.js",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "application/javascript; charset=utf-8"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/project-silicon.jpg",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "image/jpeg"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/project-lab.jpg",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "image/jpeg"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/project-agents.jpg",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "image/jpeg"
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:4173/assets/resume.pdf",
+                                                   "status":  200,
+                                                   "ok":  true,
+                                                   "contentType":  "application/pdf"
+                                               }
+                                           ],
+                         "staleRisk":  {
+                                           "htmlHasPlaceholder":  false,
+                                           "htmlHasAnalog":  true,
+                                           "note":  "Cache-first SW can serve stale shell if prior visit cached old index.html/js"
+                                       }
+                     }
+}

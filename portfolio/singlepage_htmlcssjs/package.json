@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "serve": "npx --yes serve . -l 4173",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:e2e": "vitest run tests/e2e/portfolio.dom.test.js",
+    "test": "vitest run --pool=threads --fileParallelism=false",
+    "test:watch": "vitest --pool=threads",
+    "test:e2e": "vitest run --pool=threads --fileParallelism=false tests/e2e/portfolio.dom.test.js",
     "test:e2e:playwright": "playwright test",
     "test:all": "npm test && npm run test:e2e:playwright"
   },

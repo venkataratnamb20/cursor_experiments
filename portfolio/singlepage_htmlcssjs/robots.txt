@@ -1,4 +1,5 @@
+# Keep in sync with js/content.js site.origin
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://venkataratnamb20.github.io/cursor_experiments/sitemap.xml
