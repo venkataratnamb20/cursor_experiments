@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "skills": {
+    "ab-testing": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/ab-testing/SKILL.md",
+      "computedHash": "c42af0107540e71dfe9605eca51b5100d96730d0bddf51085fc0c9429e40083c"
+    },
+    "brandkit": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/brandkit/SKILL.md",
+      "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20"
+    },
+    "cloudflare": {
+      "source": "cloudflare/skills",
+      "sourceType": "github",
+      "skillPath": "skills/cloudflare/SKILL.md",
+      "computedHash": "a1646a6a2fb7cc683de5bf8357e5d6ae02db6fd0bf771d633c1890318e25bff2"
+    },
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "computedHash": "c8d63b1f77be04fd54981720de65697988810bd28331097dbe0aaf3e166d638a"
+    },
+    "customer-research": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/customer-research/SKILL.md",
+      "computedHash": "a432ee6d37151c4b5b89045e8611f755d657e1339d9d67d928d73875ccd03a01"
+    },
+    "design-doc-mermaid": {
+      "source": "spillwavesolutions/design-doc-mermaid",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "362eecfd376c8932aa86d366a6406bf389ac4f2f52d93e5892adf8c963392afe"
+    },
+    "figma": {
+      "source": "heygen-com/hyperframes",
+      "sourceType": "github",
+      "skillPath": "skills/figma/SKILL.md",
+      "computedHash": "85a38b7553ad006b2609b6215d57f9888670027c5a912cd028bb49d75ce40914"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "f361db4e15e6bfd562a9282b1dccda513910a50061f9e838ce017be9c69dde3f"
+    },
+    "marketing-ideas": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-ideas/SKILL.md",
+      "computedHash": "c2a310c97126a0c493bae2b4b0e9fa767598bb2d139a747217fa1d8d7615e85d"
+    },
+    "marketing-plan": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-plan/SKILL.md",
+      "computedHash": "c6a0c9473c11a6b3c7ffe72bcf76417ce7e1a90330147fa1aac8dc9610ee1e38"
+    },
+    "programmatic-seo": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/programmatic-seo/SKILL.md",
+      "computedHash": "0bbdcbacfbe46fd78d774041ee49afd313505bb435b775dc246f4b8e6981d797"
+    },
+    "seo": {
+      "source": "addyosmani/web-quality-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/SKILL.md",
+      "computedHash": "1f1551c898c17a88a976b4f4aa84e17886f115f3887b62d1c4f8a1c040e4d1ef"
+    },
+    "shadcn": {
+      "source": "shadcn-ui/ui",
+      "sourceType": "github",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "computedHash": "c1a68ee06a668aced9ab2b5fbdea5f989864123794eb2e056b339a072dbb7f10"
+    },
+    "shadcn-ui": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/stitch-build/skills/shadcn-ui/SKILL.md",
+      "computedHash": "6c1f0ce10a1ceaee5715a1e50a2e3a3159496910364d643bc2a8cab3f2eec4a8"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "computedHash": "5ea13a6d9f0d4bb694405d79acd00cadec0d21bb138c4dd10fcf3c500cb835c2"
+    },
+    "tailwind-design-system": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+      "computedHash": "cd61afd28f594e8b6712b61749209cbb4466e3eec4e4223793bbd97fc85c1b63"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "computedHash": "614ac2e45fb0ec02f6ce422d26bd9aa4e33aa4867323f5a3a5c0c20b96f78ff4"
+    },
+    "test-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "computedHash": "a4126a9c5f17be3c228aa9e5755898ade283448b86099f56f40852e8c14532be"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "computedHash": "ae6989c5c68a8a0cebbc2504e44f933dddd50d17974f295dc2fa5a80cb3d63ed"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    },
+    "webapp-testing": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/webapp-testing/SKILL.md",
+      "computedHash": "ad5b1fc52807e9afa4635e59218a026b164dc58b6c3f41b0f7c644dcd6ccf572"
+    }
+  }
+}
