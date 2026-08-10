@@ -155,7 +155,9 @@ https://www.skills.sh/wshobson/agents/python-testing-patterns
 
 ## Agentic & Vibe Coding
 1. https://www.skills.sh/anthropics/skills/skill-creator
-    - npx skills add https://github.com/anthropics/skills --skill skill-creator
+    ```bash
+	npx skills add https://github.com/anthropics/skills --skill skill-creator
+	```
 2. https://www.skills.sh/larksuite/cli/lark-openapi-explorer
     - npx skills add https://github.com/larksuite/cli --skill lark-openapi-explorer
 3. https://www.skills.sh/vercel-labs/agent-browser/agent-browser
