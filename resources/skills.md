@@ -7,21 +7,33 @@
 
 ## Web Development
 1. https://www.skills.sh/anthropics/claude-code/frontend-design
-    - npx skills add https://github.com/anthropics/skills --skill frontend-design
+```bash
+    npx skills add https://github.com/anthropics/skills --skill frontend-design
+```
 2. https://www.skills.sh/antfu/skills/vitest
     - npx skills add https://github.com/antfu/skills --skill vitest
 3. https://www.skills.sh/antfu/skills/vite
     - npx skills add https://github.com/antfu/skills --skill vite
 4. https://www.skills.sh/shadcn-ui/ui/shadcn
-    - npx skills add https://github.com/shadcn-ui/ui --skill shadcn
+```bash
+    npx skills add https://github.com/shadcn-ui/ui --skill shadcn
+```
 5. https://www.skills.sh/google-labs-code/stitch-skills/shadcn-ui
-    - npx skills add https://github.com/google-labs-code/stitch-skills --skill shadcn-ui
+```bash
+    npx skills add https://github.com/google-labs-code/stitch-skills --skill shadcn-ui
+```
 5. https://www.skills.sh/wshobson/agents/tailwind-design-system
-    - npx skills add https://github.com/wshobson/agents --skill tailwind-design-system
+```bash
+    npx skills add https://github.com/wshobson/agents --skill tailwind-design-system
+```
 6. https://www.skills.sh/heygen-com/hyperframes/tailwind
-    - npx skills add https://github.com/heygen-com/hyperframes --skill tailwind
+```bash
+    npx skills add https://github.com/heygen-com/hyperframes --skill tailwind
+```
 7. https://www.skills.sh/heygen-com/hyperframes/css-animations
-    - npx skills add https://github.com/heygen-com/hyperframes --skill css-animations
+```bash
+    npx skills add https://github.com/heygen-com/hyperframes --skill css-animations
+```
 8. https://www.skills.sh/leonxlnx/taste-skill/imagegen-frontend-web
     - npx skills add https://github.com/leonxlnx/taste-skill --skill imagegen-frontend-web
 9. 
@@ -29,15 +41,23 @@
 	
 #### UI/UX Design
 1. https://www.skills.sh/heygen-com/hyperframes/figma
-    - npx skills add https://github.com/heygen-com/hyperframes --skill figma
+```bash
+    npx skills add https://github.com/heygen-com/hyperframes --skill figma
+```
 2. https://www.skills.sh/heygen-com/hyperframes/motion-graphics
     - npx skills add https://github.com/heygen-com/hyperframes --skill motion-graphics
 3. https://www.skills.sh/leonxlnx/taste-skill/brandkit
-    - npx skills add https://github.com/leonxlnx/taste-skill --skill brandkit
+```bash
+    npx skills add https://github.com/leonxlnx/taste-skill --skill brandkit
+```
 4. https://www.skills.sh/leonxlnx/taste-skill/high-end-visual-design
-    - npx skills add https://github.com/leonxlnx/taste-skill --skill high-end-visual-design
+```bash
+    npx skills add https://github.com/leonxlnx/taste-skill --skill high-end-visual-design
+```
 5. https://www.skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max
-    - npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+```bash
+    npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+```
 6. 
 7. 
 8. 
@@ -66,9 +86,13 @@
 
 #### Cloudflare
 1. http://skills.sh/cloudflare/skills/cloudflare-email-service
-    - npx skills add https://github.com/cloudflare/skills --skill cloudflare-email-service
+```bash
+    npx skills add https://github.com/cloudflare/skills --skill cloudflare-email-service
+```
 2. https://www.skills.sh/cloudflare/skills/cloudflare
-    - npx skills add https://github.com/cloudflare/skills --skill cloudflare
+```bash
+    npx skills add https://github.com/cloudflare/skills --skill cloudflare
+```
 3.
 4. 
 5. 
@@ -122,8 +146,7 @@ https://www.skills.sh/wshobson/agents/python-testing-patterns
 ## Diagrams
 1. https://www.skills.sh/spillwavesolutions/design-doc-mermaid/design-doc-mermaid
     - npx skills add https://github.com/spillwavesolutions/design-doc-mermaid --skill design-doc-mermaid
-2. https://www.skills.sh/obra/superpowers/test-driven-development
-    - npx skills add https://github.com/obra/superpowers --skill test-driven-development
+2. 
 3. 
 4. 
 5. 
@@ -150,7 +173,8 @@ https://www.skills.sh/wshobson/agents/python-testing-patterns
     - npx skills add https://github.com/mattpocock/skills --skill prototype
 8. https://www.skills.sh/mattpocock/skills/improve-codebase-architecture
     - npx skills add https://github.com/mattpocock/skills --skill improve-codebase-architecture
-9. 
+9. https://www.skills.sh/obra/superpowers/test-driven-development
+    - npx skills add https://github.com/obra/superpowers --skill test-driven-development
 10. 
 
 ## Agentic & Vibe Coding
@@ -163,7 +187,9 @@ https://www.skills.sh/wshobson/agents/python-testing-patterns
 3. https://www.skills.sh/vercel-labs/agent-browser/agent-browser
     - npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
 4. https://www.skills.sh/mattpocock/skills/grill-me
-    - npx skills add https://github.com/mattpocock/skills --skill grill-me
+```bash
+    npx skills add https://github.com/mattpocock/skills --skill grill-me
+```
 5. 
 6. 
 7. 
