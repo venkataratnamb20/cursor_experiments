@@ -19,8 +19,11 @@ test.describe('portfolio SPA smoke', () => {
     await page.waitForLoadState('networkidle');
 
     const projects = page.locator('[data-projects-list] .project-row');
-    await expect(projects).toHaveCount(3);
-    await expect(projects.first()).toContainText('Event-driven platform');
+    await expect(projects.first()).toBeVisible();
+    await expect(page.locator('#experience')).toBeVisible();
+    await expect(page.locator('[data-experience-list]')).toContainText(
+      'Portfolio demo',
+    );
   });
 
   test('faq accordion opens and closes panels', async ({ page }) => {

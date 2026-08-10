@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { portfolioContent } from '../../js/content.js';
 import {
   renderEducation,
+  renderExperience,
   renderFaq,
   renderProjects,
   renderResumeHighlights,
@@ -41,6 +42,10 @@ function boot() {
   document.querySelector('[data-education-list]').innerHTML = renderEducation(
     portfolioContent.education,
   );
+  const experienceRoot = document.querySelector('[data-experience-list]');
+  if (experienceRoot) {
+    experienceRoot.innerHTML = renderExperience(portfolioContent.experience);
+  }
   document.querySelector('[data-projects-list]').innerHTML = renderProjects(
     portfolioContent.projects,
   );
@@ -69,6 +74,7 @@ describe('portfolio SPA DOM integration', () => {
       'home',
       'about',
       'education',
+      'experience',
       'portfolio',
       'resume',
       'contact',
@@ -78,6 +84,23 @@ describe('portfolio SPA DOM integration', () => {
     }
     expect(document.querySelector('h1')?.textContent).toContain(
       'Venkata Ratnam Bhumireddy',
+    );
+  });
+
+  it('renders IC experience and agentic portfolio demo', () => {
+    const items = document.querySelectorAll(
+      '[data-experience-list] .timeline-item',
+    );
+    expect(items.length).toBe(portfolioContent.experience.length);
+    const text = document.querySelector('[data-experience-list]')?.textContent;
+    expect(text).toMatch(/Vishay/i);
+    expect(text).toContain('Portfolio demo');
+    expect(text).toMatch(/Senior ML Engineer/i);
+  });
+
+  it('uses resume contact email', () => {
+    expect(document.querySelector('[data-contact-email]')?.textContent).toBe(
+      'venkata.ratnam.in17@gmail.com',
     );
   });
 

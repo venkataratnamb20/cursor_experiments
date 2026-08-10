@@ -5,6 +5,7 @@
     - Home
     - About
     - Education
+    - Experience
     - Portfolio
     - Resume
     - Contact
@@ -13,6 +14,10 @@
 3. Progressive web application
 4. Optimized for Performance
 5. Optimized for SEO
+
+## Content
+- Primary brand: Staff Analog IC Design Engineer (from `docs/resumes/`)
+- Portfolio-demo Experience entry: Senior ML Engineer — Agentic AI Systems (labeled, not CV employment)
 
 ## UI/UX Guidelines
 

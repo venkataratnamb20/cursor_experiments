@@ -36,6 +36,33 @@ export function renderEducation(entries) {
 }
 
 /**
+ * Render experience timeline (IC roles + optional portfolio demo).
+ * @param {Array<object>} entries Experience list.
+ * @returns {string} HTML markup.
+ */
+export function renderExperience(entries) {
+  return entries
+    .map((entry) => {
+      const isDemo = entry.kind === 'demo';
+      const badge = isDemo
+        ? `<span class="experience-badge mono">${escapeHtml(entry.label || 'Portfolio demo')}</span>`
+        : '';
+      const bullets = (entry.bullets || [])
+        .map((bullet) => `<li>${escapeHtml(bullet)}</li>`)
+        .join('');
+
+      return `
+      <li class="timeline-item experience-item reveal${isDemo ? ' experience-item--demo' : ''}">
+        <p class="timeline-period mono">${escapeHtml(entry.period)}${badge ? ` ${badge}` : ''}</p>
+        <h3 class="timeline-title">${escapeHtml(entry.role)}</h3>
+        <p class="timeline-school">${escapeHtml(entry.company)}</p>
+        ${bullets ? `<ul class="experience-bullets">${bullets}</ul>` : ''}
+      </li>`;
+    })
+    .join('');
+}
+
+/**
  * Render portfolio projects as rows.
  * @param {Array<object>} projects Project list.
  * @returns {string} HTML markup.
@@ -62,9 +89,13 @@ export function renderProjects(projects) {
       ]
         .filter(Boolean)
         .join(' · ');
+      const image = project.imageUrl
+        ? `<div class="project-media"><img src="${escapeHtml(project.imageUrl)}" alt="" width="640" height="360" loading="lazy" decoding="async" /></div>`
+        : '';
 
       return `
       <article class="project-row reveal">
+        ${image}
         <div class="project-main">
           <h3 class="project-title">${escapeHtml(project.title)}</h3>
           <p class="project-summary">${escapeHtml(project.summary)}</p>

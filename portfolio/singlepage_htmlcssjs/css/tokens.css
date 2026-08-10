@@ -22,9 +22,9 @@
   --focus-ring: var(--accent-cyan);
   --header-height: 4rem;
 
-  /* Type scale */
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  /* Type scale — IBM Plex (technical, distinct from Inter defaults) */
+  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --text-display: clamp(2.25rem, 5vw, 3.5rem);
   --text-h1: clamp(1.75rem, 3vw, 2.25rem);

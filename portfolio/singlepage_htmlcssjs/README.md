@@ -4,11 +4,14 @@ Minimal single-page portfolio for **Venkata Ratnam Bhumireddy**, built with HTML
 
 This experiment adapts the approved UI/UX tokens and principles from [`docs/design/portfolio_ui_ux_decisions_final.md`](docs/design/portfolio_ui_ux_decisions_final.md). The Next.js production architecture in [`docs/design/portfolio_architecture_decisions_final.md`](docs/design/portfolio_architecture_decisions_final.md) is intentionally out of scope here (no backend, AI assistant, or MDX).
 
+Primary brand: **Staff Analog IC Design Engineer** (content from [`docs/resumes/`](docs/resumes/)). A **Portfolio demo** Experience entry covers Senior ML / agentic AI systems and is labeled so it is not mistaken for CV employment.
+
 ## Features
 
-- Sections: Home, About, Education, Portfolio, Resume, Contact, FAQ
+- Sections: Home, About, Education, Experience, Portfolio, Resume, Contact, FAQ
 - Dark technical minimal design (CSS design tokens)
 - Responsive layout + sticky / mobile navigation
+- Hero media (poster + muted video; reduced-motion uses poster only)
 - FAQ accordion and client-side contact validation (`mailto:`)
 - SEO: meta tags, Open Graph, JSON-LD `Person`, `robots.txt`, `sitemap.xml`
 - PWA: web manifest + cache-first service worker for the static shell
@@ -29,9 +32,9 @@ You can also open `index.html` directly in a browser. ES modules and the service
 
 ## Edit content
 
-Update copy, projects, education, FAQ, and contact details in [`js/content.js`](js/content.js). Sections re-render from that single content source on load.
+Update copy, projects, education, experience, FAQ, and contact details in [`js/content.js`](js/content.js). Sections re-render from that single content source on load.
 
-Replace `https://example.com` in `index.html`, `robots.txt`, and `sitemap.xml` with your real domain before publishing. Update the contact email in `js/content.js`.
+Replace `https://example.com` in `index.html`, `robots.txt`, and `sitemap.xml` with your real domain before publishing.
 
 ## Tests
 
@@ -50,7 +53,8 @@ Playwright requires browser system libraries (`npx playwright install chromium` 
 ├── index.html
 ├── css/                 # tokens, base, layout, components
 ├── js/                  # content, render, nav, faq, contact, reveal, main
-├── assets/              # icons / OG artwork
+├── assets/              # icons, hero/project media, resume.pdf, ATTRIBUTION.md
+├── docs/resumes/        # source CV PDF
 ├── manifest.webmanifest
 ├── sw.js
 ├── robots.txt
@@ -65,3 +69,13 @@ Installed under `.agents/skills/`: `frontend-design`, `ui-ux-pro-max`, `copywrit
 ## Deploy notes
 
 Any static host works (GitHub Pages, Cloudflare Pages, Netlify, etc.). Point the host at this folder root. After deploy, verify the service worker registers over HTTPS and update canonical / sitemap URLs.
+
+## Assets
+
+1. **Images:** Unsplash stills stored under `assets/` (Unsplash License). See [`assets/ATTRIBUTION.md`](assets/ATTRIBUTION.md).
+2. **Video:** `assets/hero-loop.mp4` is currently an MDN CC0 sample. Prefer replacing with a Pixabay tech/circuit loop (Pixabay Content License) using the same path.
+3. **Projects:** Public GitHub repos used as placeholders (`microsoft/autogen`, `crewAIInc/crewAI`).
+
+## Development guidelines
+
+1. Git branching: `feature/*`, `fix/*`, `release/*` from `dev`; merge back to `dev` after tests pass. Do not push without explicit request.

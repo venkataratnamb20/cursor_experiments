@@ -1,6 +1,6 @@
 /* Cache-first service worker for the static portfolio shell. */
 
-const CACHE_NAME = 'vrb-portfolio-v1';
+const CACHE_NAME = 'vrb-portfolio-v2';
 const SHELL_ASSETS = [
   './',
   './index.html',
@@ -17,6 +17,7 @@ const SHELL_ASSETS = [
   './js/reveal.js',
   './manifest.webmanifest',
   './assets/icon.svg',
+  './assets/hero-poster.jpg',
 ];
 
 self.addEventListener('install', (event) => {

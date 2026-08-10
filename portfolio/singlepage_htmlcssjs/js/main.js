@@ -5,6 +5,7 @@
 import { portfolioContent } from './content.js';
 import {
   renderEducation,
+  renderExperience,
   renderFaq,
   renderProjects,
   renderResumeHighlights,
@@ -18,7 +19,8 @@ import { initReveal } from './reveal.js';
  * Fill static profile text in the hero and about sections.
  */
 function hydrateProfile() {
-  const { profile, about, resume, contact } = portfolioContent;
+  const { profile, about, resume, contact, hero, mediaAttribution } =
+    portfolioContent;
 
   const setText = (selector, value) => {
     const el = document.querySelector(selector);
@@ -55,6 +57,9 @@ function hydrateProfile() {
   if (resumeLink) {
     resumeLink.textContent = resume.label;
     resumeLink.setAttribute('href', resume.url);
+    if (resume.url.endsWith('.pdf')) {
+      resumeLink.setAttribute('download', '');
+    }
   }
 
   const contactEmail = document.querySelector('[data-contact-email]');
@@ -77,6 +82,49 @@ function hydrateProfile() {
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
+
+  hydrateHeroMedia(hero);
+
+  const attributionEl = document.querySelector('[data-media-attribution]');
+  if (attributionEl && mediaAttribution?.length) {
+    attributionEl.textContent = mediaAttribution.join(' ');
+  }
+}
+
+/**
+ * Wire hero poster/video; honor prefers-reduced-motion.
+ * @param {{videoUrl?: string, posterUrl?: string}} hero Hero media paths.
+ */
+function hydrateHeroMedia(hero) {
+  if (!hero) {
+    return;
+  }
+
+  const media = document.querySelector('[data-hero-media]');
+  const video = document.querySelector('[data-hero-video]');
+  const poster = document.querySelector('[data-hero-poster]');
+
+  if (poster && hero.posterUrl) {
+    poster.setAttribute('src', hero.posterUrl);
+  }
+
+  const reduceMotion =
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (video && hero.videoUrl && !reduceMotion) {
+    video.setAttribute('poster', hero.posterUrl || '');
+    video.querySelector('source')?.setAttribute('src', hero.videoUrl);
+    video.load();
+    video.play().catch(() => {
+      /* Autoplay may be blocked; poster remains visible */
+    });
+    media?.classList.add('has-video');
+  } else if (video) {
+    video.removeAttribute('autoplay');
+    video.pause?.();
+    video.setAttribute('hidden', '');
+  }
 }
 
 /**
@@ -86,6 +134,11 @@ function renderDynamicSections() {
   const educationRoot = document.querySelector('[data-education-list]');
   if (educationRoot) {
     educationRoot.innerHTML = renderEducation(portfolioContent.education);
+  }
+
+  const experienceRoot = document.querySelector('[data-experience-list]');
+  if (experienceRoot) {
+    experienceRoot.innerHTML = renderExperience(portfolioContent.experience);
   }
 
   const projectsRoot = document.querySelector('[data-projects-list]');

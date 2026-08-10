@@ -3,27 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Venkata Ratnam Bhumireddy — Software Engineer Portfolio</title>
+    <title>Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Venkata Ratnam Bhumireddy — software engineer focused on reliable systems, clear architecture, and production delivery."
+      content="Portfolio of Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer specializing in mixed-signal ASICs (ADC, PMIC, ADPLL, SerDes), with portfolio-demo work in agentic AI systems."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://example.com/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Venkata Ratnam Bhumireddy — Software Engineer" />
+    <meta
+      property="og:title"
+      content="Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer"
+    />
     <meta
       property="og:description"
-      content="Reliable systems, clear trade-offs, and production-minded engineering."
+      content="Mixed-signal ASIC design from architecture to tape-out. Portfolio demo: agentic AI systems."
     />
     <meta property="og:url" content="https://example.com/" />
     <meta property="og:image" content="https://example.com/assets/og-default.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Venkata Ratnam Bhumireddy — Software Engineer" />
+    <meta
+      name="twitter:title"
+      content="Venkata Ratnam Bhumireddy — Staff Analog IC Design Engineer"
+    />
     <meta
       name="twitter:description"
-      content="Reliable systems, clear trade-offs, and production-minded engineering."
+      content="Mixed-signal ASIC design from architecture to tape-out. Portfolio demo: agentic AI systems."
     />
 
     <meta name="theme-color" content="#090d16" />
@@ -34,7 +40,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -48,10 +54,13 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Venkata Ratnam Bhumireddy",
-        "jobTitle": "Software Engineer",
+        "jobTitle": "Staff Analog IC Design Engineer",
         "url": "https://example.com/",
-        "email": "mailto:hello@example.com",
-        "description": "Software engineer building reliable systems with clear architecture and production delivery."
+        "email": "mailto:venkata.ratnam.in17@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/venkata-ratnam-bhumireddy"
+        ],
+        "description": "Staff Analog IC Design Engineer specializing in mixed-signal ASICs, with portfolio-demo exploration of agentic AI systems."
       }
     </script>
   </head>
@@ -74,6 +83,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
@@ -83,36 +93,66 @@
 
     <main id="main" class="page">
       <section id="home" class="hero" aria-labelledby="hero-name">
-        <p class="status-line mono">
-          <span class="status-dot" aria-hidden="true"></span>
-          <span data-profile-availability>Available for senior architecture roles</span>
-        </p>
-        <h1 id="hero-name" class="hero-brand" data-profile-name>
-          Venkata Ratnam Bhumireddy
-        </h1>
-        <p class="hero-title" data-profile-title>
-          Software engineer building reliable systems
-        </p>
-        <p class="hero-pitch" data-profile-pitch>
-          I design and ship production systems with clear trade-offs, measurable
-          reliability, and clean interfaces.
-        </p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="#portfolio" data-cta-primary
-            >Explore portfolio</a
+        <div class="hero-media" data-hero-media aria-hidden="true">
+          <img
+            class="hero-poster"
+            data-hero-poster
+            src="./assets/hero-poster.jpg"
+            alt=""
+            width="1920"
+            height="1080"
+            decoding="async"
+          />
+          <video
+            class="hero-video"
+            data-hero-video
+            muted
+            loop
+            playsinline
+            autoplay
+            poster="./assets/hero-poster.jpg"
           >
-          <a class="btn btn-ghost" href="#resume" data-cta-secondary>View resume</a>
+            <source src="./assets/hero-loop.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-media-scrim"></div>
+        </div>
+        <div class="hero-content">
+          <p class="status-line mono">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-profile-availability
+              >Open to senior analog / mixed-signal IC design roles</span
+            >
+          </p>
+          <h1 id="hero-name" class="hero-brand" data-profile-name>
+            Venkata Ratnam Bhumireddy
+          </h1>
+          <p class="hero-title" data-profile-title>
+            Staff Analog IC Design Engineer
+          </p>
+          <p class="hero-pitch" data-profile-pitch>
+            14+ years designing mixed-signal ASICs — SAR ADCs, PMICs, ADPLLs, and
+            SerDes — from architecture through layout and tape-out across 180nm
+            to 14nm CMOS.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#portfolio" data-cta-primary
+              >Explore portfolio</a
+            >
+            <a class="btn btn-ghost" href="#resume" data-cta-secondary
+              >View resume</a
+            >
+          </div>
         </div>
       </section>
 
       <section id="about" class="section" aria-labelledby="about-heading">
         <span class="section-label">About</span>
-        <h2 id="about-heading">Signal over noise</h2>
+        <h2 id="about-heading">Silicon first</h2>
         <div class="section-intro reveal" data-about-body>
           <p>
-            I focus on systems that stay understandable under load: clear
-            boundaries, honest observability, and delivery habits that survive
-            real production constraints.
+            Staff Analog IC Design Engineer focused on mixed-signal ASICs —
+            optical sensors, ADCs, PMICs, PLLs, and SerDes — with growing
+            portfolio-demo work in agentic AI.
           </p>
         </div>
       </section>
@@ -121,18 +161,32 @@
         <span class="section-label">Education</span>
         <h2 id="education-heading">Background</h2>
         <p class="section-intro">
-          Formal study and continuing credentials that shape how I approach
-          systems work.
+          VLSI and electronics foundations that shape how I approach analog and
+          mixed-signal design.
         </p>
         <ul class="timeline-list" data-education-list></ul>
+      </section>
+
+      <section
+        id="experience"
+        class="section"
+        aria-labelledby="experience-heading"
+      >
+        <span class="section-label">Experience</span>
+        <h2 id="experience-heading">Career timeline</h2>
+        <p class="section-intro">
+          Analog / mixed-signal IC roles from the resume, plus one clearly
+          labeled portfolio demo for Senior ML / agentic AI systems.
+        </p>
+        <ul class="timeline-list" data-experience-list></ul>
       </section>
 
       <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
         <span class="section-label">Portfolio</span>
         <h2 id="portfolio-heading">Selected work</h2>
         <p class="section-intro">
-          Concise project summaries with impact metrics. Replace placeholders in
-          <span class="mono">js/content.js</span> with your case studies.
+          Silicon case summaries with measured impact, plus public GitHub
+          placeholders for agentic AI exploration.
         </p>
         <div class="project-list" data-projects-list></div>
       </section>
@@ -141,11 +195,17 @@
         <span class="section-label">Resume</span>
         <h2 id="resume-heading">Experience highlights</h2>
         <p class="section-intro">
-          A short list of ownership themes. Request the full resume for roles,
-          dates, and stack detail.
+          Ownership themes from mixed-signal IC delivery. Download the PDF for
+          full dates, stack, and publications.
         </p>
         <ul class="highlight-list" data-resume-highlights></ul>
-        <a class="btn btn-ghost" href="#contact" data-resume-link>Request full resume</a>
+        <a
+          class="btn btn-ghost"
+          href="./assets/resume.pdf"
+          data-resume-link
+          download
+          >Download full resume (PDF)</a
+        >
       </section>
 
       <section id="contact" class="section" aria-labelledby="contact-heading">
@@ -159,8 +219,11 @@
             </p>
             <p>
               Email:
-              <a class="text-link" data-contact-email href="mailto:hello@example.com"
-                >hello@example.com</a
+              <a
+                class="text-link"
+                data-contact-email
+                href="mailto:venkata.ratnam.in17@gmail.com"
+                >venkata.ratnam.in17@gmail.com</a
               >
             </p>
             <ul class="social-list" data-social-links></ul>
@@ -206,6 +269,7 @@
         © <span data-year>2026</span> Venkata Ratnam Bhumireddy. Built as a
         minimal HTML/CSS/JS portfolio.
       </p>
+      <p class="footer-attribution" data-media-attribution></p>
     </footer>
 
     <script type="module" src="./js/main.js"></script>
