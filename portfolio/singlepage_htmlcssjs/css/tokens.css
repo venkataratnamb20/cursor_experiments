@@ -1,0 +1,51 @@
+/* Design tokens — dark technical portfolio (docs/design UI/UX) */
+
+:root {
+  /* Neutral foundation */
+  --bg-primary: #090d16;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1f2937;
+
+  /* Typography colors */
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  /* Technical accents */
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+
+  /* Surfaces & chrome */
+  --border-subtle: rgba(148, 163, 184, 0.18);
+  --focus-ring: var(--accent-cyan);
+  --header-height: 4rem;
+
+  /* Type scale */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-display: clamp(2.25rem, 5vw, 3.5rem);
+  --text-h1: clamp(1.75rem, 3vw, 2.25rem);
+  --text-h2: 1.5rem;
+  --text-body: 1.125rem;
+  --text-code: 0.95rem;
+
+  --leading-display: 1.1;
+  --leading-body: 1.6;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --content-max: 68rem;
+  --ease-out: cubic-bezier(0.25, 0.4, 0.25, 1);
+  --duration-fast: 180ms;
+  --duration-motion: 300ms;
+}
